@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.6rem;
     font-family: "Montserrat", sans-serif;
     background-color: #F2F2F2;
+    color: #363636;
   }
 
   a{
