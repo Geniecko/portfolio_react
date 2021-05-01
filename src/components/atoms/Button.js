@@ -9,7 +9,7 @@ const Button = styled.button`
   font-size: ${({ theme }) => theme.fontSize.s};
   font-weight: ${({ theme }) => theme.semiBold};
   letter-spacing: 0.5px;
-  border: 3px solid ${({ theme }) => theme.blue};
+  border: 2px solid ${({ theme }) => theme.blue};
   transition: 0.3s;
 
   &:hover {

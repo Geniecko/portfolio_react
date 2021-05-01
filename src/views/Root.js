@@ -1,35 +1,31 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import MainTemplate from 'templates/MainTemplate';
-
-import Button from 'components/atoms/Button';
+import Home from 'views/Home';
+import Portfolio from 'views/Portfolio';
+import Contact from 'views/Contact';
 import SideBar from 'components/organisms/SideBar';
-import Paragraph from 'components/atoms/Paragraph';
-import Heading from 'components/atoms/Heading';
-import Input from 'components/atoms/Input';
-import Textarea from 'components/atoms/Textarea';
-import Avatar from 'components/atoms/Avatar';
+import 'css/animationRoute.css';
 
 const Root = () => (
-  <>
+  <BrowserRouter>
     <MainTemplate>
-      <Button>Pobierz CV</Button>
-      <Button secondary>Pobierz CV</Button>
-      <Paragraph>Hello boys</Paragraph>
-      <Heading>Hello</Heading>
-      <Heading big>Hello</Heading>
-      <br />
-      <Input placeholder="Mail" />
-      <br />
-      <br />
-      <Textarea placeholder="Message" />
-      <br />
-      <br />
-      <Avatar />
-      <br />
-      <br />
-
       <SideBar />
+      <Route
+        render={({ location }) => (
+          <TransitionGroup>
+            <CSSTransition key={location.key} timeout={1000} classNames="fade">
+              <Switch location={location}>
+                <Route exact path="/" component={Home} />
+                <Route path="/portfolio" component={Portfolio} />
+                <Route path="/contact" component={Contact} />
+              </Switch>
+            </CSSTransition>
+          </TransitionGroup>
+        )}
+      />
     </MainTemplate>
-  </>
+  </BrowserRouter>
 );
 export default Root;

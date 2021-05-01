@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 
-const Heading = styled.p`
+const Heading = styled.h1`
+  color: ${({ blue, theme }) => (blue ? theme.blue : theme.dark)};
   font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: ${({ theme }) => theme.bold};
 
@@ -9,6 +10,12 @@ const Heading = styled.p`
     css`
       font-size: ${({ theme }) => theme.fontSize.xxl};
       font-weight: ${({ theme }) => theme.extraBold};
+    `}
+
+  ${({ small }) =>
+    small &&
+    css`
+      font-size: ${({ theme }) => theme.fontSize.l};
     `}
 `;
 

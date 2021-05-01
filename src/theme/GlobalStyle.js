@@ -21,10 +21,12 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Montserrat", sans-serif;
     background-color: #F2F2F2;
     color: #363636;
+    padding-left: 170px;
   }
 
   a{
      cursor:pointer;
+     text-decoration:none;
   }
 
   button{

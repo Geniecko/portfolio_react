@@ -2,6 +2,7 @@ export const theme = {
   white: '#F2F2F2',
   blue: '#1C91D3',
   dark: '#363636',
+  lightgray: '#c5c5c5',
   gray: '#979797',
   paragraphColor: 'rgba(54, 54, 54, 0.8);',
   light: 300,
