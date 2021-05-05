@@ -1,11 +1,18 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const PageTemplate = styled.div`
-  margin: 5vh 6vw 2.5vh 6vw;
   position: absolute;
-  top: 0;
-  left: 150px;
-  right: 0;
+  top: 5vh;
+  left: 295px;
+  right: 125px;
+  padding-bottom: 100px;
+
+  ${({ center }) =>
+    center &&
+    css`
+      display: flex;
+      justify-content: center;
+    `}
 `;
 
 export default PageTemplate;

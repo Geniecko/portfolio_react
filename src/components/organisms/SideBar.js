@@ -29,7 +29,7 @@ const StyledLinkList = styled.ul`
   padding: 0;
 `;
 
-const StyledLogoLink = styled(Logo)`
+const StyledLogoLinkWrapper = styled.div`
   margin: 5vh 0 10vh 0;
 `;
 
@@ -73,9 +73,11 @@ const StyledCopyRight = styled(StyledParagraphFooter)`
 
 const SideBar = () => (
   <StyledNavWrapper>
-    <StyledLogoLink as={NavLink} to="/">
-      R
-    </StyledLogoLink>
+    <StyledLogoLinkWrapper>
+      <Logo as={NavLink} to="/">
+        R
+      </Logo>
+    </StyledLogoLinkWrapper>
     <StyledLinkList>
       <li>
         <NavIcon exact as={NavLink} icon={userIcon} to="/" activeclass="active">

@@ -1,20 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Heading from 'components/atoms/Heading';
 import Paragraph from 'components/atoms/Paragraph';
 import Button from 'components/atoms/Button';
-import heroesGym from 'assets/image/heroes_gym.jpg';
-import heroesGymMobile from 'assets/image/heroes_gym_mobile.jpg';
 
 const StyledWrapper = styled.div`
-  margin: 60px 0;
+  margin-bottom: 100px;
 `;
 
 const StyledImageWrapper = styled.div`
   margin-bottom: 30px;
 `;
 
-const StyledTextWrapper = styled.div``;
+const StyledTextWrapper = styled.div`
+  h1 {
+    font-size: 24px;
+  }
+`;
 
 const StyledImage = styled.img`
   width: 700px;
@@ -40,25 +43,32 @@ const StyledButton = styled(Button)`
   margin-top: 10px;
 `;
 
-const WebsiteCard = () => (
+const WebsiteCard = ({ title, content, technologiesContent, siteUrl, image, imageMobile }) => (
   <StyledWrapper>
     <StyledImageWrapper>
-      <StyledImage src={heroesGym} />
-      <StyledImageMobile src={heroesGymMobile} />
+      <StyledImage src={image} />
+      <StyledImageMobile src={imageMobile} />
     </StyledImageWrapper>
     <StyledTextWrapper>
       <StyledHeading blue small>
-        Heroes Gym
+        {title}
       </StyledHeading>
-      <StyledParagraph>
-        Projekt strony w oparciu o layout z https://themeforest.net/. Przygotowanie grafik na strone
-        w programie Photoshop. Projekt zawiera technikę RWD oraz jest oparty w większości na
-        Flexboxie.
-      </StyledParagraph>
-      <StyledParagraph>Użyte technologie: HTML, CSS(SASS), JS, jQuery</StyledParagraph>
-      <StyledButton>Sprawdź</StyledButton>
+      <StyledParagraph>{content}</StyledParagraph>
+      <StyledParagraph>{technologiesContent}</StyledParagraph>
+      <a href={siteUrl}>
+        <StyledButton>Sprawdź</StyledButton>
+      </a>
     </StyledTextWrapper>
   </StyledWrapper>
 );
+
+WebsiteCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  technologiesContent: PropTypes.string.isRequired,
+  siteUrl: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  imageMobile: PropTypes.string.isRequired,
+};
 
 export default WebsiteCard;

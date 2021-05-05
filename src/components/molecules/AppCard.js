@@ -1,24 +1,39 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Heading from 'components/atoms/Heading';
 import Paragraph from 'components/atoms/Paragraph';
 import Button from 'components/atoms/Button';
-import minutnik from 'assets/image/minutnik.jpg';
 
 const StyledWrapper = styled.div`
   display: flex;
+  flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
   position: relative;
+  margin-bottom: 100px;
 `;
 
 const StyledImageWrapper = styled.div`
-  margin-right: 50px;
+  margin: ${({ reverse }) => (reverse ? '0 0 0 50px' : '0 50px 0 0')};
 `;
 
-const StyledTextWrapper = styled.div``;
+const StyledTextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: ${({ reverse }) => (reverse ? 'right' : 'left')};
+  h1 {
+    font-size: 24px;
+  }
+
+  a {
+    align-self: flex-start;
+    margin-top: auto;
+  }
+`;
 
 const StyledImage = styled.img`
   width: 400px;
   border-radius: 25px;
+  border: 2px solid ${({ theme }) => theme.lightgray};
 `;
 
 const StyledHeading = styled(Heading)`
@@ -30,29 +45,36 @@ const StyledParagraph = styled(Paragraph)`
   margin-bottom: 20px;
 `;
 
-const StyledButton = styled(Button)`
-  position: absolute;
-  bottom: 0;
-`;
+const StyledButton = styled(Button)``;
 
-const WebsiteCard = () => (
-  <StyledWrapper>
-    <StyledImageWrapper>
-      <StyledImage src={minutnik} />
+const AppCard = ({ reverse, title, content, technologiesContent, siteUrl, image }) => (
+  <StyledWrapper reverse={reverse}>
+    <StyledImageWrapper reverse={reverse}>
+      <StyledImage src={image} />
     </StyledImageWrapper>
-    <StyledTextWrapper>
+    <StyledTextWrapper reverse={reverse}>
       <StyledHeading blue small>
-        Minutnik
+        {title}
       </StyledHeading>
-      <StyledParagraph>
-        Projekt strony w oparciu o layout z https://themeforest.net/. Przygotowanie grafik na strone
-        w programie Photoshop. Projekt zawiera technikę RWD oraz jest oparty w większości na
-        Flexboxie.
-      </StyledParagraph>
-      <StyledParagraph>Użyte technologie: HTML, CSS(SASS), JS, jQuery</StyledParagraph>
-      <StyledButton>Sprawdź</StyledButton>
+      <StyledParagraph>{content}</StyledParagraph>
+      <StyledParagraph>{technologiesContent}</StyledParagraph>
+      <a href={siteUrl}>
+        <StyledButton secondary>Sprawdź</StyledButton>
+      </a>
     </StyledTextWrapper>
   </StyledWrapper>
 );
 
-export default WebsiteCard;
+AppCard.propTypes = {
+  reverse: PropTypes.bool,
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  technologiesContent: PropTypes.string.isRequired,
+  siteUrl: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+};
+
+AppCard.defaultProps = {
+  reverse: false,
+};
+export default AppCard;

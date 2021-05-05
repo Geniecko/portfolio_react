@@ -35,17 +35,23 @@ const StyledParagraph = styled(Paragraph)`
   width: 600px;
 `;
 
-const HeadingTemplate = ({ headingData }) => (
+const HeadingTemplate = ({ title, description, center }) => (
   <>
-    <StyledHeading big blue>
-      {headingData.title}
+    <StyledHeading center={center} big blue>
+      {title}
     </StyledHeading>
-    <StyledParagraph>{headingData.description}</StyledParagraph>
+    <StyledParagraph>{description}</StyledParagraph>
   </>
 );
 
 HeadingTemplate.propTypes = {
-  headingData: PropTypes.arrayOf(PropTypes.object).isRequired,
+  center: PropTypes.bool,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
+
+HeadingTemplate.defaultProps = {
+  center: false,
 };
 
 export default HeadingTemplate;

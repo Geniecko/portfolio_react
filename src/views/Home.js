@@ -95,13 +95,34 @@ const StyledSkillsList = styled.ul`
 `;
 
 const skillsContent = [
-  'Znajomość HTML, CSS (SASS)',
-  'Podstawowa znajmość JavaScript',
-  'Podstawowa znajomość REACT',
-  'Znajomość RWD',
-  'Podstawowa obsługa narzędzia GIT',
-  'Umiejętność obsługi programów graficznych (Adobe Photoshop, Adobe Ilustrator, Figma)',
-  'Podstawowa znajomość WordPressa',
+  {
+    id: 1,
+    content: 'Znajomość HTML, CSS (SASS)',
+  },
+  {
+    id: 2,
+    content: 'Podstawowa znajmość JavaScript',
+  },
+  {
+    id: 3,
+    content: 'Podstawowa znajomość REACT',
+  },
+  {
+    id: 4,
+    content: 'Znajomość RWD',
+  },
+  {
+    id: 5,
+    content: 'Podstawowa obsługa narzędzia GIT',
+  },
+  {
+    id: 6,
+    content: 'Umiejętność obsługi programów graficznych (Adobe Photoshop, Adobe Ilustrator, Figma)',
+  },
+  {
+    id: 7,
+    content: 'Podstawowa znajomość WordPressa',
+  },
 ];
 
 const Home = () => (
@@ -134,8 +155,8 @@ const Home = () => (
       <Heading small>Technologie i umiejętności</Heading>
       <StyledSkillsList>
         {skillsContent.map((item) => (
-          <li>
-            <Paragraph>{item}</Paragraph>
+          <li key={item.id}>
+            <Paragraph>{item.content}</Paragraph>
           </li>
         ))}
       </StyledSkillsList>

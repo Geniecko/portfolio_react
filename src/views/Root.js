@@ -15,7 +15,14 @@ const Root = () => (
       <Route
         render={({ location }) => (
           <TransitionGroup>
-            <CSSTransition key={location.key} timeout={1000} classNames="fade">
+            <CSSTransition
+              key={location.key}
+              timeout={1000}
+              classNames="fade"
+              onExit={() => {
+                document.body.scrollIntoView();
+              }}
+            >
               <Switch location={location}>
                 <Route exact path="/" component={Home} />
                 <Route path="/portfolio" component={Portfolio} />
