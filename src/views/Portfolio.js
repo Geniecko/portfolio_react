@@ -137,7 +137,9 @@ const Portfolio = () => (
           <Paragraph>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, porro?
           </Paragraph>
-          <Button>GitHub</Button>
+          <a href="https://github.com/Geniecko" target="_blank" rel="noreferrer">
+            <Button>GitHub</Button>
+          </a>
         </StyledGitHubWrapper>
       </StyledProjectsWrapper>
     </StyledPortfolioWrapper>

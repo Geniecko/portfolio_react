@@ -58,7 +58,7 @@ const AppCard = ({ reverse, title, content, technologiesContent, siteUrl, image 
       </StyledHeading>
       <StyledParagraph>{content}</StyledParagraph>
       <StyledParagraph>{technologiesContent}</StyledParagraph>
-      <a href={siteUrl}>
+      <a href={siteUrl} target="_blank" rel="noreferrer">
         <StyledButton secondary>Sprawdź</StyledButton>
       </a>
     </StyledTextWrapper>

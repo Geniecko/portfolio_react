@@ -55,7 +55,7 @@ const WebsiteCard = ({ title, content, technologiesContent, siteUrl, image, imag
       </StyledHeading>
       <StyledParagraph>{content}</StyledParagraph>
       <StyledParagraph>{technologiesContent}</StyledParagraph>
-      <a href={siteUrl}>
+      <a href={siteUrl} target="_blank" rel="noreferrer">
         <StyledButton>Sprawdź</StyledButton>
       </a>
     </StyledTextWrapper>

@@ -19,8 +19,8 @@ const StyledNavWrapper = styled.div`
   height: 100vh;
   width: 170px;
   background-color: ${({ theme }) => theme.dark};
-  z-index: 999;
-  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  box-shadow: 0px 0px 30px -5px rgba(0, 0, 0, 0.4);
 `;
 
 const StyledLinkList = styled.ul`
@@ -51,9 +51,9 @@ const StyledFooter = styled.div`
 
 const StyledParagraphFooter = styled(Paragraph)`
   color: ${({ theme }) => theme.white};
-  font-size: 10px;
+  font-size: 9px;
   text-transform: uppercase;
-  font-weight: ${({ theme }) => theme.semiBold};
+  font-weight: ${({ theme }) => theme.bold};
 `;
 
 const StyledCopyRight = styled(StyledParagraphFooter)`
@@ -95,6 +95,7 @@ const SideBar = () => (
         </NavIcon>
       </li>
     </StyledLinkList>
+
     <StyledFooter>
       <StyledCopyRight>
         <span>
