@@ -10,6 +10,9 @@ const StyledWrapper = styled.div`
   flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
   position: relative;
   margin-bottom: 100px;
+  @media (max-width: 1360px) {
+    flex-direction: column;
+  }
 `;
 
 const StyledImageWrapper = styled.div`
@@ -33,7 +36,15 @@ const StyledTextWrapper = styled.div`
 const StyledImage = styled.img`
   width: 400px;
   border-radius: 25px;
-  border: 2px solid ${({ theme }) => theme.lightgray};
+  box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 1360px) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 768px) {
+    width: 300px;
+  }
 `;
 
 const StyledHeading = styled(Heading)`
@@ -41,7 +52,7 @@ const StyledHeading = styled(Heading)`
 `;
 
 const StyledParagraph = styled(Paragraph)`
-  width: 450px;
+  max-width: 450px;
   margin-bottom: 20px;
 `;
 

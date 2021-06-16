@@ -24,7 +24,11 @@ const Textarea = styled.textarea`
   }
 
   :focus {
-    border: 2px solid ${({ theme }) => theme.blue};
+    border: 2px solid ${({ theme }) => theme.secondColor};
+  }
+
+  @media (max-width: 768px) {
+    width: 300px;
   }
 `;
 

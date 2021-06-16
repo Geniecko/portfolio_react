@@ -13,6 +13,12 @@ const PageTemplate = styled.div`
       display: flex;
       justify-content: center;
     `}
+
+  @media (max-width: 768px) {
+    top: 120px;
+    left: 30px;
+    right: 30px;
+  }
 `;
 
 export default PageTemplate;

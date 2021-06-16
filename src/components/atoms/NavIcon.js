@@ -1,56 +1,9 @@
-// import React from 'react';
-// import PropTypes from 'prop-types';
-// import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-// const StyledNavText = styled.div`
-//   position: absolute;
-//   bottom: 15px;
-//   text-transform: uppercase;
-//   font-size: ${({ theme }) => theme.fontSize.xs};
-//   font-weight: ${({ theme }) => theme.bold};
-//   color: ${({ theme }) => theme.white};
-// `;
-
-// const StyledWrapperIcon = styled.button`
-//   position: relative;
-//   display: flex;
-//   justify-content: center;
-//   width: 120px;
-//   height: 120px;
-//   border-radius: 25px;
-//   border: 5px solid transparent;
-//   transition: 0.3s;
-//   background: none;
-
-//   &:hover {
-//     border: 5px solid ${({ theme }) => theme.blue};
-//   }
-
-//   &.active {
-//     border: 5px solid ${({ theme }) => theme.blue};
-//   }
-// `;
-
-// const StyledNavIcon = styled.img`
-//   height: 40px;
-//   margin-top: 15px;
-// `;
-
-// const NavIcon = ({ icon, children }) => (
-//   <StyledWrapperIcon>
-//     <StyledNavIcon src={icon} />
-//     <StyledNavText>{children}</StyledNavText>
-//   </StyledWrapperIcon>
-// );
-
-// NavIcon.propTypes = {
-//   icon: PropTypes.string.isRequired,
-//   children: PropTypes.string.isRequired,
-// };
-
-// export default NavIcon;
-
-import styled from 'styled-components';
+const aniIcon = keyframes`
+   0% { opacity: 0}
+  100% { opacity: 1}
+`;
 
 const NavIcon = styled.button`
   position: relative;
@@ -71,7 +24,21 @@ const NavIcon = styled.button`
   }
 
   &.active {
-    border: 5px solid ${({ theme }) => theme.blue};
+    border: 5px solid ${({ theme }) => theme.secondColor};
+  }
+
+  @media (max-height: 700px) and (min-width: 768px) {
+    width: 120px;
+    height: 80px;
+    background-size: 15%;
+    opacity: 0;
+    animation: ${aniIcon} 0.3s ease-in forwards;
+  }
+
+  @media (max-width: 768px) {
+    opacity: 0;
+    animation: ${aniIcon} 0.3s ease-in forwards;
+    animation-delay: 0.5s;
   }
 `;
 

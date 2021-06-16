@@ -4,7 +4,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import MainTemplate from 'templates/MainTemplate';
 import Home from 'views/Home';
 import Portfolio from 'views/Portfolio';
-import Contact from 'views/Contact';
+import ContactForm from 'views/ContactForm';
 import SideBar from 'components/organisms/SideBar';
 import 'css/animationRoute.css';
 
@@ -26,7 +26,7 @@ const Root = () => (
               <Switch location={location}>
                 <Route exact path="/" component={Home} />
                 <Route path="/portfolio" component={Portfolio} />
-                <Route path="/contact" component={Contact} />
+                <Route path="/contact" component={ContactForm} />
               </Switch>
             </CSSTransition>
           </TransitionGroup>

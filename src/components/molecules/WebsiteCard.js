@@ -22,12 +22,25 @@ const StyledTextWrapper = styled.div`
 const StyledImage = styled.img`
   width: 700px;
   border-radius: 25px;
+  box-shadow: 0px 0px 30px -5px rgba(0, 0, 0, 0.4);
+
+  @media (max-width: 1360px) {
+    width: 60vw;
+  }
+  @media (max-width: 768px) {
+    width: 90vw;
+  }
 `;
 
 const StyledImageMobile = styled.img`
   width: 150px;
   border-radius: 25px;
   margin-left: 50px;
+  box-shadow: 0px 0px 30px -5px rgba(0, 0, 0, 0.4);
+
+  @media (max-width: 1360px) {
+    display: none;
+  }
 `;
 
 const StyledHeading = styled(Heading)`
@@ -35,7 +48,7 @@ const StyledHeading = styled(Heading)`
 `;
 
 const StyledParagraph = styled(Paragraph)`
-  width: 500px;
+  max-width: 500px;
   margin-bottom: 20px;
 `;
 

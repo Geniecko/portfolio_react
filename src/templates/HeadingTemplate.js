@@ -13,7 +13,7 @@ const StyledHeading = styled(Heading)`
     content: '';
     width: 60px;
     height: 6px;
-    background-color: ${({ theme }) => theme.blue};
+    background-color: ${({ theme }) => theme.secondColor};
     overflow: hidden;
     border-radius: 3px;
   }
@@ -32,7 +32,7 @@ const StyledHeading = styled(Heading)`
 
 const StyledParagraph = styled(Paragraph)`
   margin-top: 30px;
-  width: 600px;
+  max-width: 600px;
 `;
 
 const HeadingTemplate = ({ title, description, center }) => (

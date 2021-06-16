@@ -9,9 +9,19 @@ import Textarea from 'components/atoms/Textarea';
 import HeadingTemplate from 'templates/HeadingTemplate';
 import { dataEmail } from 'dataEmail/dataEmail';
 import ContactModal from 'components/atoms/ContactModal';
+import ContactIcon from 'components/atoms/ContactIcon';
+import facebookIcon from 'assets/icon/facebookIcon.svg';
+import githubIcon from 'assets/icon/githubIcon.svg';
+import Paragraph from 'components/atoms/Paragraph';
 
 const StyledContactWrapper = styled.div`
   padding-top: 55px;
+`;
+
+const StyledFormAndIconFlexBox = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 200px;
 `;
 
 const StyledContactForm = styled.form`
@@ -29,12 +39,27 @@ const StyledInput = styled(Input)`
   margin-bottom: 15px;
   width: 300px;
 `;
+
 const StyledTextarea = styled(Textarea)``;
+
+const StyledContactIcon = styled.div`
+  margin-top: 100px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+`;
+
+const StyledParagraph = styled(Paragraph)`
+  margin-top: 50px;
+
+  span {
+    font-weight: ${({ theme }) => theme.bold};
+  }
+`;
 
 const headingData = {
   title: 'Kontakt',
-  description:
-    'Contact description lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores porro eius a,recusandae itaque',
+  description: 'Zachęcam do kontaktu poprzez formularz lub na podany adres e-mail.   ',
 };
 
 class ContactForm extends React.Component {
@@ -68,19 +93,34 @@ class ContactForm extends React.Component {
       <PageTemplate>
         <StyledContactWrapper>
           <HeadingTemplate title={headingData.title} description={headingData.description} />
-          <StyledContactForm onSubmit={(e) => this.handleClick(e, sendEmail)}>
-            <StyledInput type="email" placeholder="Email" name="email" required />
-            <StyledInput
-              type="text"
-              placeholder="Tytuł"
-              name="title"
-              required
-              minLength="3"
-              maxLenghit="50"
-            />
-            <StyledTextarea placeholder="Wiadomość" name="message" required minLength="10" />
-            <Button type="submit">Wyślij</Button>
-          </StyledContactForm>
+          <StyledFormAndIconFlexBox>
+            <StyledContactForm onSubmit={(e) => this.handleClick(e, sendEmail)}>
+              <StyledInput type="email" placeholder="Email" name="email" required />
+              <StyledInput
+                type="text"
+                placeholder="Tytuł"
+                name="title"
+                required
+                minLength="3"
+                maxLenghit="50"
+              />
+              <StyledTextarea placeholder="Wiadomość" name="message" required minLength="10" />
+              <Button type="submit">Wyślij</Button>
+            </StyledContactForm>
+            <div>
+              <StyledContactIcon>
+                <a href="https://www.facebook.com/Raadeek">
+                  <ContactIcon icon={facebookIcon} target="_blank" rel="noreferrer" />
+                </a>
+                <a href="https://github.com/Geniecko" target="_blank" rel="noreferrer">
+                  <ContactIcon icon={githubIcon} />
+                </a>
+              </StyledContactIcon>
+              <StyledParagraph>
+                <span>Mój email:</span> radoslawkania09@gmail.com
+              </StyledParagraph>
+            </div>
+          </StyledFormAndIconFlexBox>
         </StyledContactWrapper>
         {isOpen && <ContactModal closeModal={this.closeModal} />}
       </PageTemplate>

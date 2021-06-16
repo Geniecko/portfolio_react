@@ -26,7 +26,7 @@ const StyledAboutTextBox = styled.div`
       content: '';
       width: 60px;
       height: 6px;
-      background-color: ${({ theme }) => theme.blue};
+      background-color: ${({ theme }) => theme.secondColor};
       overflow: hidden;
       border-radius: 3px;
     }
@@ -43,7 +43,7 @@ const StyledAboutTextBox = styled.div`
     }
 
     span {
-      color: ${({ theme }) => theme.blue};
+      color: ${({ theme }) => theme.secondColor};
     }
   }
 `;
@@ -53,6 +53,10 @@ const StyledAboutButtonBox = styled.div`
   display: flex;
   justify-content: space-between;
   width: 320px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const StyledHeading = styled(Heading)`
@@ -65,7 +69,7 @@ const StyledHeading = styled(Heading)`
 
 const StyledParagraph = styled(Paragraph)`
   margin-top: 30px;
-  width: 600px;
+  max-width: 600px;
 `;
 
 const StyledSkillsWrapper = styled.div`
@@ -89,7 +93,7 @@ const StyledSkillsList = styled.ul`
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background-color: ${({ theme }) => theme.blue};
+      background-color: ${({ theme }) => theme.secondColor};
     }
   }
 `;
@@ -136,12 +140,12 @@ const Home = () => (
           CZEŚĆ! <span>Jestem Radek!</span>
         </StyledHeading>
         <StyledParagraph>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet esse qui rem reprehenderit,
-          quam quisquam repudiandae impedit quos nemo inventore nobis maiores fugiat eos voluptatum
-          in delectus id perspiciatis? Nostrum.
+          Od kilku lat interesuję się tworzeniem stron internetowych. W ostatnim czasie skupiłem się
+          na pogłębianiu swojej wiedzy w zakresie frontendu i w tej dziedzinie czuję się najlepiej.
+          Chciałbym poszerzyć swoje kompetencje i wykorzystać nabyte umiejętności w praktyce.
         </StyledParagraph>
         <StyledAboutButtonBox>
-          <Button as={Link} to="/files/example.pdf" target="_blank" download secondary>
+          <Button as={Link} to="/files/Radosław_Kania_CV.pdf" target="_blank" download secondary>
             Pobierz CV
           </Button>
           <Button as={Link} to="/contact" secondary>
