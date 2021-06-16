@@ -16,8 +16,12 @@ const PageTemplate = styled.div`
 
   @media (max-width: 768px) {
     top: 120px;
-    left: 30px;
-    right: 30px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 

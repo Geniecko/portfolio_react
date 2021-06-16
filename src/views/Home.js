@@ -10,6 +10,10 @@ import Avatar from 'components/atoms/Avatar';
 const StyledAboutWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    width: 90vw;
+  }
 `;
 
 const StyledAboutTextBox = styled.div`
@@ -74,6 +78,10 @@ const StyledParagraph = styled(Paragraph)`
 
 const StyledSkillsWrapper = styled.div`
   margin-top: 100px;
+
+  @media (max-width: 768px) {
+    width: 90vw;
+  }
 `;
 
 const StyledSkillsList = styled.ul`

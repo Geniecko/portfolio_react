@@ -16,6 +16,10 @@ import Paragraph from 'components/atoms/Paragraph';
 
 const StyledContactWrapper = styled.div`
   padding-top: 55px;
+
+  @media (max-width: 768px) {
+    width: 90vw;
+  }
 `;
 
 const StyledFormAndIconFlexBox = styled.div`

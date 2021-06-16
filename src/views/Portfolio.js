@@ -22,6 +22,10 @@ import portfolioReactMobile from 'assets/image/portfolio_react_mobile.jpg';
 
 const StyledPortfolioWrapper = styled.div`
   padding-top: 55px;
+
+  @media (max-width: 768px) {
+    width: 90vw;
+  }
 `;
 
 const StyledProjectsWrapper = styled.div`
