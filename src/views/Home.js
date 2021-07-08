@@ -109,7 +109,7 @@ const StyledSkillsList = styled.ul`
 const skillsContent = [
   {
     id: 1,
-    content: 'Znajomość HTML, CSS (SASS)',
+    content: 'Znajomość HTML, CSS (SASS&BEM)',
   },
   {
     id: 2,
@@ -129,10 +129,14 @@ const skillsContent = [
   },
   {
     id: 6,
-    content: 'Umiejętność obsługi programów graficznych (Adobe Photoshop, Adobe Ilustrator, Figma)',
+    content: 'Podstawowa znajomość Webpack',
   },
   {
     id: 7,
+    content: 'Umiejętność obsługi programów graficznych (Adobe Photoshop, Adobe Ilustrator, Figma)',
+  },
+  {
+    id: 8,
     content: 'Podstawowa znajomość WordPressa',
   },
 ];
