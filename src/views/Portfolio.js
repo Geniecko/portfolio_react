@@ -13,7 +13,7 @@ import heroesGymMobile from 'assets/image/heroes_gym_mobile.jpg';
 import yourHome from 'assets/image/your_home.jpg';
 import yourHomeMobile from 'assets/image/your_home_mobile.jpg';
 import minutnik from 'assets/image/minutnik.jpg';
-import tikTakToo from 'assets/image/tik_tak_too.jpg';
+import justQuiz from 'assets/image/just_quiz.jpg';
 import taskManager from 'assets/image/task_manager.jpg';
 import jacekKania from 'assets/image/jacek_kania.jpg';
 import jacekKaniaMobile from 'assets/image/jacek_kania_mobile.jpg';
@@ -112,12 +112,12 @@ const appProjects = [
   },
   {
     id: 2,
-    title: 'Gra w kółko i krzyżyk',
+    title: 'Just Quiz',
     content:
-      'Aplikacja webowa, a dokładnie gra w kółko i krzyżyk stworzona na siatce GRID. Aby zagrać należy zaznaczyć kółko lub krzyżyk, a następnie kliknąć przycisk "NOWA GRA". Aby przerwać grę należy kilknąć przycisk "KONIEC".',
-    technologiesContent: 'Użyte technologie: HTML, CSS, JS',
-    siteUrl: 'https://tiktaktoo.netlify.app',
-    image: tikTakToo,
+      'Quiz stworzony w JS. Pytania, odpowiedzi pobierane są z pliku za pomocą metody fetch. Aplikacja nie jest połączona z bazą danych więc wyniki po odświeźeniu strony kasują się. Arkusze stylów pisane za pomocą preprocesora SASS oraz konwencji nazewnictwa BEM.',
+    technologiesContent: 'Użyte technologie: HTML, CSS(SASS & BEM), JS, Webpack',
+    siteUrl: 'https://justquiz.netlify.app/',
+    image: justQuiz,
   },
   {
     id: 3,
