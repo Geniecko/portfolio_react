@@ -4,10 +4,9 @@
 
 - React 
 - React-Router 
-- Styled-Components,
-- EmailJS,
-- CSSTransition,
-- Eslint,
+- Styled-Components
+- CSSTransition
+- Eslint
 - Prettier
 - Figma
 

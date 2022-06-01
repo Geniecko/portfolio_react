@@ -8,8 +8,6 @@ import Heading from 'components/atoms/Heading';
 import Paragraph from 'components/atoms/Paragraph';
 import Button from 'components/atoms/Button';
 
-import heroesGym from 'assets/image/heroes_gym.jpg';
-import heroesGymMobile from 'assets/image/heroes_gym_mobile.jpg';
 import thomasAnderson from 'assets/image/thomas_anderson.jpg';
 import thomasAndersonMobile from 'assets/image/thomas_anderson_mobile.jpg';
 import justQuiz from 'assets/image/just_quiz.jpg';
@@ -55,16 +53,6 @@ const headingData = {
 const websiteProjects = [
   {
     id: 1,
-    title: 'Heroes Gym',
-    content:
-      'Projekt strony w oparciu o layout z https://themeforest.net/. Przygotowanie grafik na strone w programie Photoshop. Projekt zawiera technikę RWD oraz jest oparty w większości na Flexboxie.',
-    technologiesContent: 'Użyte technologie: HTML, CSS(SASS), JS, jQuery, Photoshop',
-    siteUrl: 'https://heroesgym.netlify.app',
-    image: heroesGym,
-    imageMobile: heroesGymMobile,
-  },
-  {
-    id: 2,
     title: 'Thomas Anderson',
     content:
       'Wstępny layout strony stworzyłem w programie Figma oraz grafiki w programie Photoshop. Postanowiłem użyc przy tym projekcie uprzednio skonfigurowanego Webpacka ponieważ chciałem przetestować go w praktyce. W projekcie zdecydowałem się użyc preprocesora SASS w połączeniu z metodologią BEM. Strona posiada wersję mobilną i jest w pełni responsywna (Desktop First).',
@@ -75,12 +63,12 @@ const websiteProjects = [
     imageMobile: thomasAndersonMobile,
   },
   {
-    id: 3,
+    id: 2,
     title: 'Portfolio',
     content:
       'Portfolio, które właśnie oglądasz jest najbardziej rozbudowanym projektem, który stworzyłem w ReactJS. Postanowiłem użyc Reacta ze względu na routing. Za pomocą CSSTransition udało mi się stworzyć animowane przejścia pomiędzy podstronami. Od samego początku tworzenia aplikacji używałem narzędzi takich jak Eslint oraz Prettier, które zkonfigurowałem w plikach .eslintrc oraz .prettierrc. Struktura plików jest zbudowana zgodnie z zasadą Atomic Design Pattern. Strone stylowałem za pomocą bilblioteki styled-components. Portfolio jest w pełni responsywne. Layout stworzony w programie Figma. ',
     technologiesContent:
-      'Użyte technologie: React, React-Router, Styled-Components, EmailJS, CSSTransition, Eslint, Prettier, Figma, Photoshop',
+      'Użyte technologie: React, React-Router, Styled-Components, CSSTransition, Eslint, Prettier, Figma, Photoshop',
     siteUrl: '/',
     image: portfolioReact,
     imageMobile: portfolioReactMobile,
