@@ -12,11 +12,7 @@ import heroesGym from 'assets/image/heroes_gym.jpg';
 import heroesGymMobile from 'assets/image/heroes_gym_mobile.jpg';
 import thomasAnderson from 'assets/image/thomas_anderson.jpg';
 import thomasAndersonMobile from 'assets/image/thomas_anderson_mobile.jpg';
-import minutnik from 'assets/image/minutnik.jpg';
 import justQuiz from 'assets/image/just_quiz.jpg';
-import taskManager from 'assets/image/task_manager.jpg';
-import jacekKania from 'assets/image/jacek_kania.jpg';
-import jacekKaniaMobile from 'assets/image/jacek_kania_mobile.jpg';
 import portfolioReact from 'assets/image/portfolio_react.jpg';
 import portfolioReactMobile from 'assets/image/portfolio_react_mobile.jpg';
 
@@ -73,23 +69,13 @@ const websiteProjects = [
     content:
       'Wstępny layout strony stworzyłem w programie Figma oraz grafiki w programie Photoshop. Postanowiłem użyc przy tym projekcie uprzednio skonfigurowanego Webpacka ponieważ chciałem przetestować go w praktyce. W projekcie zdecydowałem się użyc preprocesora SASS w połączeniu z metodologią BEM. Strona posiada wersję mobilną i jest w pełni responsywna (Desktop First).',
     technologiesContent:
-      'Użyte technologie: HTML, CSS(SASS & BEM), Vanilla JS, Webpack, Figma, Photoshop',
+      'Użyte technologie: HTML, CSS(SASS & BEM), JavaScript, Webpack, Figma, Photoshop',
     siteUrl: 'https://thomasphotography.netlify.app',
     image: thomasAnderson,
     imageMobile: thomasAndersonMobile,
   },
   {
     id: 3,
-    title: 'Jacek Kania',
-    content:
-      'Pierwsza strona, którą stworzyłem dawno temu podczas mojej nauki. Layout strony oraz wszystkie grafiki zrobiłem samodzielnie. Strona posiada RWD.',
-    technologiesContent: 'Użyte technologie: HTML, CSS, JS, Photoshop',
-    siteUrl: 'https://jacek-kania.netlify.app',
-    image: jacekKania,
-    imageMobile: jacekKaniaMobile,
-  },
-  {
-    id: 4,
     title: 'Portfolio',
     content:
       'Portfolio, które właśnie oglądasz jest najbardziej rozbudowanym projektem, który stworzyłem w ReactJS. Postanowiłem użyc Reacta ze względu na routing. Za pomocą CSSTransition udało mi się stworzyć animowane przejścia pomiędzy podstronami. Od samego początku tworzenia aplikacji używałem narzędzi takich jak Eslint oraz Prettier, które zkonfigurowałem w plikach .eslintrc oraz .prettierrc. Struktura plików jest zbudowana zgodnie z zasadą Atomic Design Pattern. Strone stylowałem za pomocą bilblioteki styled-components. Portfolio jest w pełni responsywne. Layout stworzony w programie Figma. ',
@@ -104,30 +90,12 @@ const websiteProjects = [
 const appProjects = [
   {
     id: 1,
-    title: 'Minutnik do jajek',
-    content:
-      'Aplikacja webowa, która odliczy nam czas do ugotowania jajka. Zaznacz sposób ugotowania jajka, a następnie kliknij przycisk "START". Możesz zresetować odliczanie, klikajac przycisk "ZRESETUJ" lub też zatrzymać minutnik a następnie go wyzerować kilkając przycisk "WYZERUJ".',
-    technologiesContent: 'Użyte technologie: HTML, CSS, JS',
-    siteUrl: 'https://minutnikproject.netlify.app',
-    image: minutnik,
-  },
-  {
-    id: 2,
     title: 'Just Quiz',
     content:
       'Quiz stworzony w JS. Pytania, odpowiedzi pobierane są z pliku za pomocą metody fetch. Aplikacja nie jest połączona z bazą danych więc wyniki po odświeźeniu strony kasują się. Arkusze stylów pisane za pomocą preprocesora SASS oraz konwencji nazewnictwa BEM.',
     technologiesContent: 'Użyte technologie: HTML, CSS(SASS & BEM), JS, Webpack, Figma',
     siteUrl: 'https://justquiz.netlify.app/',
     image: justQuiz,
-  },
-  {
-    id: 3,
-    title: 'Task manager',
-    content:
-      'Projekt TODO APP stworzony podczas nauki React. Aplikacja stworzona z widokiem na desktop - brak RWD.',
-    technologiesContent: 'Użyte technologie: HTML, CSS, React, React-Router',
-    siteUrl: 'https://geniecko.github.io/react_taskmanager/',
-    image: taskManager,
   },
 ];
 
