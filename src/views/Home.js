@@ -113,7 +113,7 @@ const skillsContent = [
   },
   {
     id: 2,
-    content: 'Podstawowa znajmość JavaScript',
+    content: 'Znajmość JavaScript',
   },
   {
     id: 3,

@@ -10,8 +10,8 @@ import Button from 'components/atoms/Button';
 
 import heroesGym from 'assets/image/heroes_gym.jpg';
 import heroesGymMobile from 'assets/image/heroes_gym_mobile.jpg';
-import yourHome from 'assets/image/your_home.jpg';
-import yourHomeMobile from 'assets/image/your_home_mobile.jpg';
+import thomasAnderson from 'assets/image/thomas_anderson.jpg';
+import thomasAndersonMobile from 'assets/image/thomas_anderson_mobile.jpg';
 import minutnik from 'assets/image/minutnik.jpg';
 import justQuiz from 'assets/image/just_quiz.jpg';
 import taskManager from 'assets/image/task_manager.jpg';
@@ -62,27 +62,28 @@ const websiteProjects = [
     title: 'Heroes Gym',
     content:
       'Projekt strony w oparciu o layout z https://themeforest.net/. Przygotowanie grafik na strone w programie Photoshop. Projekt zawiera technikę RWD oraz jest oparty w większości na Flexboxie.',
-    technologiesContent: 'Użyte technologie: HTML, CSS(SASS), JS, jQuery',
+    technologiesContent: 'Użyte technologie: HTML, CSS(SASS), JS, jQuery, Photoshop',
     siteUrl: 'https://heroesgym.netlify.app',
     image: heroesGym,
     imageMobile: heroesGymMobile,
   },
   {
     id: 2,
-    title: 'Your Home',
+    title: 'Thomas Anderson',
     content:
-      'Prosta strona oparta na layout z https://themeforest.net/. Grafika przygotowana w programie Photoshop, strona posiada RWD oraz lekkie animacje.',
-    technologiesContent: 'Użyte technologie: HTML, CSS',
-    siteUrl: 'https://yourhomeproject.netlify.app',
-    image: yourHome,
-    imageMobile: yourHomeMobile,
+      'Wstępny layout strony stworzyłem w programie Figma oraz grafiki w programie Photoshop. Postanowiłem użyc przy tym projekcie uprzednio skonfigurowanego Webpacka ponieważ chciałem przetestować go w praktyce. W projekcie zdecydowałem się użyc preprocesora SASS w połączeniu z metodologią BEM. Strona posiada wersję mobilną i jest w pełni responsywna (Desktop First).',
+    technologiesContent:
+      'Użyte technologie: HTML, CSS(SASS & BEM), Vanilla JS, Webpack, Figma, Photoshop',
+    siteUrl: 'https://thomasphotography.netlify.app',
+    image: thomasAnderson,
+    imageMobile: thomasAndersonMobile,
   },
   {
     id: 3,
     title: 'Jacek Kania',
     content:
-      'Pierwsza strona, którą stworzyłem podczas mojej nauki. Layout strony oraz wszystkie grafiki zrobiłem samodzielnie. Strona posiada RWD.',
-    technologiesContent: 'Użyte technologie: HTML, CSS, JS',
+      'Pierwsza strona, którą stworzyłem dawno temu podczas mojej nauki. Layout strony oraz wszystkie grafiki zrobiłem samodzielnie. Strona posiada RWD.',
+    technologiesContent: 'Użyte technologie: HTML, CSS, JS, Photoshop',
     siteUrl: 'https://jacek-kania.netlify.app',
     image: jacekKania,
     imageMobile: jacekKaniaMobile,
@@ -93,7 +94,7 @@ const websiteProjects = [
     content:
       'Portfolio, które właśnie oglądasz jest najbardziej rozbudowanym projektem, który stworzyłem w ReactJS. Postanowiłem użyc Reacta ze względu na routing. Za pomocą CSSTransition udało mi się stworzyć animowane przejścia pomiędzy podstronami. Od samego początku tworzenia aplikacji używałem narzędzi takich jak Eslint oraz Prettier, które zkonfigurowałem w plikach .eslintrc oraz .prettierrc. Struktura plików jest zbudowana zgodnie z zasadą Atomic Design Pattern. Strone stylowałem za pomocą bilblioteki styled-components. Portfolio jest w pełni responsywne. Layout stworzony w programie Figma. ',
     technologiesContent:
-      'Użyte technologie: React, React-Router, Styled-Components, EmailJS, CSSTransition, Eslint, Prettier',
+      'Użyte technologie: React, React-Router, Styled-Components, EmailJS, CSSTransition, Eslint, Prettier, Figma, Photoshop',
     siteUrl: '/',
     image: portfolioReact,
     imageMobile: portfolioReactMobile,
@@ -115,7 +116,7 @@ const appProjects = [
     title: 'Just Quiz',
     content:
       'Quiz stworzony w JS. Pytania, odpowiedzi pobierane są z pliku za pomocą metody fetch. Aplikacja nie jest połączona z bazą danych więc wyniki po odświeźeniu strony kasują się. Arkusze stylów pisane za pomocą preprocesora SASS oraz konwencji nazewnictwa BEM.',
-    technologiesContent: 'Użyte technologie: HTML, CSS(SASS & BEM), JS, Webpack',
+    technologiesContent: 'Użyte technologie: HTML, CSS(SASS & BEM), JS, Webpack, Figma',
     siteUrl: 'https://justquiz.netlify.app/',
     image: justQuiz,
   },
