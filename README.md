@@ -23,3 +23,5 @@ To run this project, install it locally using npm:
 - Edit the ```websiteProjects``` array to add or remove webiste project
 - Edit the ```appProjects``` array to add or remove app project
 
+
+#### Live: https://geniecko.netlify.app/portfolio
