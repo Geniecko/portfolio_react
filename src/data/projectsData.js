@@ -48,7 +48,7 @@ export const appProjects = [
     id: 1,
     title: 'Paper Rock Scissors',
     content:
-      'Popularna gra "Papier Kamień Nożyce". Grę stworzyłem, aby zapoznać się z podstawami języka TypeScript w praktyce. Wykorzystałem preprocesor SASS oraz z metodologią BEM do ostylowania aplikacji. Wyniki zapisane są w localStorage przeglądarki, dzięki czemu po odświeżeniu strony nie tracimy naszych wyników. Swoją przygodę z TypeScript rozpocząłem od tego projektu i w ciągu dalszej nauki zamierzam go usprawniać.',
+      'Popularna gra "Papier Kamień Nożyce". Grę stworzyłem, aby zapoznać się z podstawami języka TypeScript w praktyce. Wykorzystałem preprocesor SASS z metodologią BEM do ostylowania aplikacji. Wyniki zapisane są w localStorage przeglądarki, dzięki czemu po odświeżeniu strony nie tracimy naszych wyników. Swoją przygodę z TypeScript rozpocząłem od tego projektu i w ciągu dalszej nauki zamierzam go usprawniać.',
     technologiesContent: 'Użyte technologie: HTML, CSS(SASS & BEM), TypeScript, Webpack',
     siteUrl: 'https://paper-rock-scissors-g.netlify.app',
     image: paperRockScissors,
