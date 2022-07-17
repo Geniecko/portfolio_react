@@ -6,7 +6,7 @@ import Paragraph from 'components/atoms/Paragraph';
 import Button from 'components/atoms/Button';
 
 const StyledWrapper = styled.div`
-  margin-bottom: 100px;
+  margin-bottom: 64px;
 `;
 
 const StyledImageWrapper = styled.div`
@@ -21,12 +21,13 @@ const StyledTextWrapper = styled.div`
 
 const StyledImage = styled.img`
   width: 700px;
-  border-radius: 25px;
-  box-shadow: 0px 0px 30px -5px rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
   @media (max-width: 1360px) {
     width: 60vw;
   }
+
   @media (max-width: 768px) {
     width: 90vw;
   }

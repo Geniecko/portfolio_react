@@ -9,10 +9,11 @@ import githubIcon from 'assets/icon/githubIcon.svg';
 import Paragraph from 'components/atoms/Paragraph';
 
 const StyledContactWrapper = styled.div`
-  padding-top: 55px;
+  margin-top: 32px;
 
   @media (max-width: 768px) {
     width: 90vw;
+    margin-top: 0px;
   }
 `;
 
@@ -23,7 +24,7 @@ const StyledFormAndIconFlexBox = styled.div`
 `;
 
 const StyledContactIcon = styled.div`
-  margin-top: 100px;
+  margin-top: 32px;
   width: 300px;
   display: flex;
   justify-content: space-between;

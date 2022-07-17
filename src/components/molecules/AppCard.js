@@ -9,7 +9,8 @@ const StyledWrapper = styled.div`
   display: flex;
   flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 64px;
+
   @media (max-width: 1360px) {
     flex-direction: column;
   }
@@ -17,12 +18,17 @@ const StyledWrapper = styled.div`
 
 const StyledImageWrapper = styled.div`
   margin: ${({ reverse }) => (reverse ? '0 0 0 50px' : '0 50px 0 0')};
+
+  @media (max-width: 576px) {
+    margin: 0;
+  }
 `;
 
 const StyledTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   text-align: ${({ reverse }) => (reverse ? 'right' : 'left')};
+  
   h1 {
     font-size: 24px;
   }
@@ -35,15 +41,15 @@ const StyledTextWrapper = styled.div`
 
 const StyledImage = styled.img`
   width: 400px;
-  border-radius: 25px;
-  box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
   @media (max-width: 1360px) {
     margin-bottom: 30px;
   }
 
-  @media (max-width: 768px) {
-    width: 300px;
+  @media (max-width: 576px) {
+    width: 100%;
   }
 `;
 

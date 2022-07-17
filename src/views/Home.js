@@ -17,7 +17,12 @@ const StyledAboutWrapper = styled.div`
 `;
 
 const StyledAboutTextBox = styled.div`
-  margin-top: 55px;
+  margin-top: 32px;
+
+  @media (max-width: 768px) {
+    margin-top: 0px;
+  }
+
   h2 {
     color: ${({ theme }) => theme.lightgray};
     position: relative;
@@ -77,7 +82,7 @@ const StyledParagraph = styled(Paragraph)`
 `;
 
 const StyledSkillsWrapper = styled.div`
-  margin-top: 100px;
+  margin-top: 52px;
 
   @media (max-width: 768px) {
     width: 90vw;

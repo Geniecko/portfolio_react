@@ -11,22 +11,27 @@ import Button from 'components/atoms/Button';
 import { appProjects, websiteProjects } from 'data/projectsData';
 
 const StyledPortfolioWrapper = styled.div`
-  padding-top: 55px;
+  margin-top: 32px;
 
   @media (max-width: 768px) {
     width: 90vw;
+    margin-top: 0px;
   }
 `;
 
 const StyledProjectsWrapper = styled.div`
-  margin-top: 150px;
+  margin-top: 56px;
+
+  @media (max-width: 768px) {
+    margin-top: 48px;
+  }
 `;
 
 const StyledGitHubWrapper = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-top: 70px;
+
   h1 {
     margin-bottom: 15px;
   }
