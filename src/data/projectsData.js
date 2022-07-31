@@ -6,10 +6,34 @@ import justQuiz from 'assets/image/just_quiz.jpg';
 import paperRockScissors from 'assets/image/paper_rock_scissors.png';
 import portfolioReact from 'assets/image/portfolio_react.jpg';
 import portfolioReactMobile from 'assets/image/portfolio_react_mobile.jpg';
+import moviesLibrary from 'assets/image/movies_library.jpg';
+import moviesLibraryMobile from 'assets/image/movies_library_mobile.jpg';
 
 export const websiteProjects = [
+    {
+    id: 1,
+    title: 'Movies Library',
+    content:
+      'Projekt na który patrzysz to biblioteka filmów i seriali. Jej głównym celem jest wyszukiwanie filmów po tytule, ale aplikacja jest rozbudowana o kilka dodatkowych funkcji jak dodawanie filmów do zakładek: obejrzane, ulubione oraz do oglądnięcia. Jest również możliwość dodania oceny oraz komentarza(opcjonalnie). Ocenione filmy zapisują się w zakładce ocenione. Skorzystałem w tym projekci z API filmowego. Dane zapamiętywane są w LocalStorage przeglądarki. Od samego początku tworzenia aplikacji używałem narzędzi takich jak Eslint oraz Prettier. Projekt stworzyłem głównie z myślą o użyciu w praktyce hooki oraz reduxa. Arkusze stylów pisałem za pomocą bilblioteki styled-components. Aplikacja jest przeznaczona na desktop oraz urządzenia mobilne. Projekt jest nadal w fazie budowy, chcę usprawnić oraz zoptymalizować kilka rzeczy. W przyszłości gdy poznam lepiej TypeScript, chciałbym przebudować ten projekt w oparciu o React&TypeScript.',
+    technologiesContent:
+      'Użyte technologie: React, React-Router, React-Redux, Hooks, Styled-Components, Eslint, Prettier, Figma',
+    siteUrl: 'https://movies-library-g.netlify.app/',
+    image: moviesLibrary,
+    imageMobile: moviesLibraryMobile,
+  },
   {
-      id: 1,
+    id: 2,
+    title: 'Portfolio',
+    content:
+      'Portfolio, które właśnie oglądasz jest jednym z bardziej rozbudowanych projektów, które stworzyłem w ReactJS. Postanowiłem użyc Reacta ze względu na routing. Za pomocą CSSTransition udało mi się stworzyć animowane przejścia pomiędzy podstronami. Od samego początku tworzenia aplikacji używałem narzędzi takich jak Eslint oraz Prettier, które zkonfigurowałem w plikach .eslintrc oraz .prettierrc. Struktura plików jest zbudowana zgodnie z zasadą Atomic Design Pattern. Strone stylowałem za pomocą bilblioteki styled-components. Portfolio jest w pełni responsywne. Layout stworzony w programie Figma. ',
+    technologiesContent:
+      'Użyte technologie: React, React-Router, Styled-Components, CSSTransition, Eslint, Prettier, Figma, Photoshop',
+    siteUrl: '/',
+    image: portfolioReact,
+    imageMobile: portfolioReactMobile,
+  },
+  {
+      id: 3,
       title: 'Music Festival',
       content:
         'Jest to jeden z moich najnowszych projektów, stworzyłem go aby odświeżyć portfolio. Layout strony stworzyłem w programie Figma, a następnie zakodowałem stronę przy użyciu techonologii wymienionych poniżej. Artyści są wczytywani z pliku JSON metodą FETCH API, a następnie za pomocą JavaScript dodani do strony. Strona posiada RWD. Arkusz stylów jest napisany przy użyciu preprocesora SASS. Zastosowałem tutaj metodę Mobile First',
@@ -20,7 +44,7 @@ export const websiteProjects = [
       imageMobile: musicFestivalMobile,
     },
 {
-  id: 2,
+  id: 4,
   title: 'Thomas Anderson',
   content:
     'Wstępny layout strony stworzyłem w programie Figma oraz grafiki w programie Photoshop. Postanowiłem użyc przy tym projekcie uprzednio skonfigurowanego Webpacka ponieważ chciałem przetestować go w praktyce. W projekcie zdecydowałem się użyc preprocesora SASS w połączeniu z metodologią BEM. Strona posiada wersję mobilną i jest w pełni responsywna (Desktop First).',
@@ -29,17 +53,6 @@ export const websiteProjects = [
   siteUrl: 'https://thomasphotography.netlify.app',
   image: thomasAnderson,
   imageMobile: thomasAndersonMobile,
-},
-{
-  id: 3,
-  title: 'Portfolio',
-  content:
-    'Portfolio, które właśnie oglądasz jest najbardziej rozbudowanym projektem, który stworzyłem w ReactJS. Postanowiłem użyc Reacta ze względu na routing. Za pomocą CSSTransition udało mi się stworzyć animowane przejścia pomiędzy podstronami. Od samego początku tworzenia aplikacji używałem narzędzi takich jak Eslint oraz Prettier, które zkonfigurowałem w plikach .eslintrc oraz .prettierrc. Struktura plików jest zbudowana zgodnie z zasadą Atomic Design Pattern. Strone stylowałem za pomocą bilblioteki styled-components. Portfolio jest w pełni responsywne. Layout stworzony w programie Figma. ',
-  technologiesContent:
-    'Użyte technologie: React, React-Router, Styled-Components, CSSTransition, Eslint, Prettier, Figma, Photoshop',
-  siteUrl: '/',
-  image: portfolioReact,
-  imageMobile: portfolioReactMobile,
 },
 ];
 

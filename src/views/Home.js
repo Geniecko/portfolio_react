@@ -114,7 +114,7 @@ const StyledSkillsList = styled.ul`
 const skillsContent = [
   {
     id: 1,
-    content: 'Znajomość HTML, CSS (SASS&BEM)',
+    content: 'Znajomość HTML, CSS (SASS&BEM), RWD',
   },
   {
     id: 2,
@@ -122,27 +122,27 @@ const skillsContent = [
   },
   {
     id: 3,
-    content: 'Podstawowa znajomość REACT',
+    content: 'Podstawowa znajomość TypeScript',
   },
   {
     id: 4,
-    content: 'Znajomość RWD',
+    content: 'Znajomość React',
   },
   {
     id: 5,
-    content: 'Podstawowa obsługa narzędzia GIT',
+    content: 'Znajomość Webpack',
   },
   {
     id: 6,
-    content: 'Podstawowa znajomość Webpack',
+    content: 'Znajomość systemu kontroli wersji Git oraz narzędzia GitLab',
   },
   {
     id: 7,
-    content: 'Umiejętność obsługi programów graficznych (Adobe Photoshop, Adobe Ilustrator, Figma)',
+    content: 'Znajomość i umiejętność obsługi systemu zarządzania treścią TYPO3',
   },
   {
     id: 8,
-    content: 'Podstawowa znajomość WordPressa',
+    content: 'Umiejętność obsługi programów graficznych (Ilustrator, Photoshop, Figma, AdobeXD, CorelDraw)',
   },
 ];
 
@@ -157,9 +157,7 @@ const Home = () => (
           CZEŚĆ! <span>Jestem Radek!</span>
         </StyledHeading>
         <StyledParagraph>
-          Od kilku lat interesuję się tworzeniem stron internetowych. W ostatnim czasie skupiłem się
-          na pogłębianiu swojej wiedzy w zakresie frontendu i w tej dziedzinie czuję się najlepiej.
-          Chciałbym poszerzyć swoje kompetencje i wykorzystać nabyte umiejętności w praktyce.
+          Od kilku lat interesuję się tworzeniem stron oraz aplikacji internetowych. Przez osiem miesięcy pracowałem na stanowisku Frontend Developer, a dodatkowo ostatni czas poświęciłem na pogłębianiu wiedzy z Reacta, JavaScript, TypeScript oraz odświeżeniu swojego portfolio.
         </StyledParagraph>
         <StyledAboutButtonBox>
           <Button as={Link} to="/files/Radosław_Kania_CV.pdf" target="_blank" download secondary>
