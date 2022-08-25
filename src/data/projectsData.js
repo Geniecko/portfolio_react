@@ -8,10 +8,23 @@ import portfolioReact from 'assets/image/portfolio_react.jpg';
 import portfolioReactMobile from 'assets/image/portfolio_react_mobile.jpg';
 import moviesLibrary from 'assets/image/movies_library.jpg';
 import moviesLibraryMobile from 'assets/image/movies_library_mobile.jpg';
+import weatherApp from 'assets/image/weather_app.jpg';
+import weatherAppMobile from 'assets/image/weather_app_mobile.jpg';
 
 export const websiteProjects = [
     {
-    id: 1,
+      id: 1,
+      title: 'Weather App',
+      content:
+        'Projekt to prosta apilkacja pogodowa. Jej celem jest wyszukiwanie prognozy pogody po wpisaniu nazwy miasta. Skorzystałem w tym projekci z API pogodowego w wersji darmowej, więc nie miałem dużego pola do popisu. Skorzystałem z aktualnej pogody, jakości powietrza oraz prognozy na najbliższe dni. W tym projekcie użyłem Reduxa w którym przechowuje główny stan pogody, status, alerty oraz błędy. Głównym celem projektu było przećwiczenie technologii React & TypeScript oraz zapoznanie się z narzędziem React Toolkit. W projekcie korzystałem również z gita - etapy przebiegu projektu można zobaczyć na moim GitHubie. Aplikacje stylowałem za pomocą bilblioteki styled-components.',
+      technologiesContent:
+        'Użyte technologie: React & TypeScript, React-Router v6, React-Redux, Redux toolkit, React-Hooks, Styled-Components, Eslint, Prettier',
+      siteUrl: 'https://weather-app-g.netlify.app/',
+      image: weatherApp,
+      imageMobile: weatherAppMobile,
+    },
+    {
+    id: 2,
     title: 'Movies Library',
     content:
       'Projekt na który patrzysz to biblioteka filmów i seriali. Jej głównym celem jest wyszukiwanie filmów po tytule, ale aplikacja jest rozbudowana o kilka dodatkowych funkcji jak dodawanie filmów do zakładek: obejrzane, ulubione oraz do oglądnięcia. Jest również możliwość dodania oceny oraz komentarza(opcjonalnie). Ocenione filmy zapisują się w zakładce ocenione. Skorzystałem w tym projekci z API filmowego. Dane zapamiętywane są w LocalStorage przeglądarki. Od samego początku tworzenia aplikacji używałem narzędzi takich jak Eslint oraz Prettier. Projekt stworzyłem głównie z myślą o użyciu w praktyce hooki oraz reduxa. Arkusze stylów pisałem za pomocą bilblioteki styled-components. Aplikacja jest przeznaczona na desktop oraz urządzenia mobilne. Projekt jest nadal w fazie budowy, chcę usprawnić oraz zoptymalizować kilka rzeczy. W przyszłości gdy poznam lepiej TypeScript, chciałbym przebudować ten projekt w oparciu o React&TypeScript.',
@@ -22,7 +35,7 @@ export const websiteProjects = [
     imageMobile: moviesLibraryMobile,
   },
   {
-    id: 2,
+    id: 3,
     title: 'Portfolio',
     content:
       'Portfolio, które właśnie oglądasz jest jednym z bardziej rozbudowanych projektów, które stworzyłem w ReactJS. Postanowiłem użyc Reacta ze względu na routing. Za pomocą CSSTransition udało mi się stworzyć animowane przejścia pomiędzy podstronami. Od samego początku tworzenia aplikacji używałem narzędzi takich jak Eslint oraz Prettier, które zkonfigurowałem w plikach .eslintrc oraz .prettierrc. Struktura plików jest zbudowana zgodnie z zasadą Atomic Design Pattern. Strone stylowałem za pomocą bilblioteki styled-components. Portfolio jest w pełni responsywne. Layout stworzony w programie Figma. ',
@@ -33,7 +46,7 @@ export const websiteProjects = [
     imageMobile: portfolioReactMobile,
   },
   {
-      id: 3,
+      id: 4,
       title: 'Music Festival',
       content:
         'Jest to jeden z moich najnowszych projektów, stworzyłem go aby odświeżyć portfolio. Layout strony stworzyłem w programie Figma, a następnie zakodowałem stronę przy użyciu techonologii wymienionych poniżej. Artyści są wczytywani z pliku JSON metodą FETCH API, a następnie za pomocą JavaScript dodani do strony. Strona posiada RWD. Arkusz stylów jest napisany przy użyciu preprocesora SASS. Zastosowałem tutaj metodę Mobile First',
@@ -44,7 +57,7 @@ export const websiteProjects = [
       imageMobile: musicFestivalMobile,
     },
 {
-  id: 4,
+  id: 5,
   title: 'Thomas Anderson',
   content:
     'Wstępny layout strony stworzyłem w programie Figma oraz grafiki w programie Photoshop. Postanowiłem użyc przy tym projekcie uprzednio skonfigurowanego Webpacka ponieważ chciałem przetestować go w praktyce. W projekcie zdecydowałem się użyc preprocesora SASS w połączeniu z metodologią BEM. Strona posiada wersję mobilną i jest w pełni responsywna (Desktop First).',
