@@ -160,9 +160,9 @@ const Home = () => (
           Od kilku lat interesuję się tworzeniem stron oraz aplikacji internetowych. Przez osiem miesięcy pracowałem na stanowisku Frontend Developer, a dodatkowo ostatni czas poświęciłem na pogłębianiu wiedzy z Reacta, JavaScript, TypeScript oraz odświeżeniu swojego portfolio.
         </StyledParagraph>
         <StyledAboutButtonBox>
-          <Button as={Link} to="/files/Radosław_Kania_CV.pdf" target="_blank" download secondary>
+          {/* <Button as={Link} to="/files/Radosław_Kania_CV.pdf" target="_blank" download secondary>
             Pobierz CV
-          </Button>
+          </Button> */}
           <Button as={Link} to="/contact" secondary>
             Kontakt
           </Button>
