@@ -62,6 +62,7 @@ const Portfolio = () => (
             content={item.content}
             technologiesContent={item.technologiesContent}
             siteUrl={item.siteUrl}
+            gitHubUrl={item.gitHubUrl}
             image={item.image}
             imageMobile={item.imageMobile}
             key={item.id}
@@ -74,6 +75,7 @@ const Portfolio = () => (
             content={item.content}
             technologiesContent={item.technologiesContent}
             siteUrl={item.siteUrl}
+            gitHubUrl={item.gitHubUrl}
             image={item.image}
             key={item.id}
           />

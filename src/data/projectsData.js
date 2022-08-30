@@ -20,6 +20,7 @@ export const websiteProjects = [
     technologiesContent:
       'Użyte technologie: React & TypeScript, React-Router v6, React-Redux, Redux toolkit, React-Hooks, Styled-Components, Eslint, Prettier',
     siteUrl: 'https://weather-app-g.netlify.app/',
+    gitHubUrl: 'https://github.com/Geniecko/weather_app',
     image: weatherApp,
     imageMobile: weatherAppMobile,
   },
@@ -31,6 +32,7 @@ export const websiteProjects = [
     technologiesContent:
       'Użyte technologie: React, React-Router, React-Redux, Hooks, Styled-Components, Eslint, Prettier, Figma',
     siteUrl: 'https://movies-library-g.netlify.app/',
+    gitHubUrl: 'https://github.com/Geniecko/movies_library',
     image: moviesLibrary,
     imageMobile: moviesLibraryMobile,
   },
@@ -42,6 +44,7 @@ export const websiteProjects = [
     technologiesContent:
       'Użyte technologie: React, React-Router, Styled-Components, CSSTransition, Eslint, Prettier, Figma, Photoshop',
     siteUrl: '/',
+    gitHubUrl: 'https://github.com/Geniecko/portfolio_react',
     image: portfolioReact,
     imageMobile: portfolioReactMobile,
   },
@@ -53,6 +56,7 @@ export const websiteProjects = [
     technologiesContent:
       'Użyte technologie: HTML, CSS(SASS & BEM), JavaScript, SplideJs, Webpack, Figma, Photoshop',
     siteUrl: 'https://music-festival-cracow.netlify.app/',
+    gitHubUrl: 'https://github.com/Geniecko/music_festival',
     image: musicFestival,
     imageMobile: musicFestivalMobile,
   },
@@ -64,6 +68,7 @@ export const websiteProjects = [
     technologiesContent:
       'Użyte technologie: HTML, CSS(SASS & BEM), JavaScript, Webpack, Figma, Photoshop',
     siteUrl: 'https://thomasphotography.netlify.app',
+    gitHubUrl: 'https://github.com/Geniecko/thomas_anderson',
     image: thomasAnderson,
     imageMobile: thomasAndersonMobile,
   },
@@ -77,6 +82,7 @@ export const appProjects = [
       'Popularna gra "Papier Kamień Nożyce". Grę stworzyłem, aby zapoznać się z podstawami języka TypeScript w praktyce. Wykorzystałem preprocesor SASS z metodologią BEM do ostylowania aplikacji. Wyniki zapisane są w localStorage przeglądarki, dzięki czemu po odświeżeniu strony nie tracimy naszych wyników. Swoją przygodę z TypeScript rozpocząłem od tego projektu i w ciągu dalszej nauki zamierzam go usprawniać.',
     technologiesContent: 'Użyte technologie: HTML, CSS(SASS & BEM), TypeScript, Webpack',
     siteUrl: 'https://paper-rock-scissors-g.netlify.app',
+    gitHubUrl: 'https://github.com/Geniecko/paper_rock_scissors',
     image: paperRockScissors,
   },
   {
@@ -86,6 +92,7 @@ export const appProjects = [
       'Quiz stworzony w JS. Pytania, odpowiedzi pobierane są z pliku za pomocą metody fetch. Aplikacja nie jest połączona z bazą danych więc wyniki po odświeźeniu strony kasują się. Arkusze stylów pisane za pomocą preprocesora SASS oraz konwencji nazewnictwa BEM.',
     technologiesContent: 'Użyte technologie: HTML, CSS(SASS & BEM), JS, Webpack, Figma',
     siteUrl: 'https://justquiz.netlify.app/',
+    gitHubUrl: 'https://github.com/Geniecko/justquiz',
     image: justQuiz,
   },
 ];

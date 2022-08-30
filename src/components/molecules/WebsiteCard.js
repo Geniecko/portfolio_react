@@ -53,11 +53,21 @@ const StyledParagraph = styled(Paragraph)`
   margin-bottom: 20px;
 `;
 
-const StyledButton = styled(Button)`
-  margin-top: 10px;
+const StyledLinks = styled.div`
+  margin-top: auto;
+  display: flex;
+  gap: 16px;
 `;
 
-const WebsiteCard = ({ title, content, technologiesContent, siteUrl, image, imageMobile }) => (
+const WebsiteCard = ({
+  title,
+  content,
+  technologiesContent,
+  siteUrl,
+  gitHubUrl,
+  image,
+  imageMobile,
+}) => (
   <StyledWrapper>
     <StyledImageWrapper>
       <StyledImage src={image} />
@@ -69,9 +79,14 @@ const WebsiteCard = ({ title, content, technologiesContent, siteUrl, image, imag
       </StyledHeading>
       <StyledParagraph>{content}</StyledParagraph>
       <StyledParagraph>{technologiesContent}</StyledParagraph>
-      <a href={siteUrl} target="_blank" rel="noreferrer">
-        <StyledButton>Sprawdź</StyledButton>
-      </a>
+      <StyledLinks>
+        <a href={siteUrl} target="_blank" rel="noreferrer">
+          <Button>Live</Button>
+        </a>
+        <a href={gitHubUrl} target="_blank" rel="noreferrer">
+          <Button secondary>GitHub</Button>
+        </a>
+      </StyledLinks>
     </StyledTextWrapper>
   </StyledWrapper>
 );
@@ -81,6 +96,7 @@ WebsiteCard.propTypes = {
   content: PropTypes.string.isRequired,
   technologiesContent: PropTypes.string.isRequired,
   siteUrl: PropTypes.string.isRequired,
+  gitHubUrl: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   imageMobile: PropTypes.string.isRequired,
 };

@@ -28,7 +28,7 @@ const StyledTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   text-align: ${({ reverse }) => (reverse ? 'right' : 'left')};
-  
+
   h1 {
     font-size: 24px;
   }
@@ -62,9 +62,13 @@ const StyledParagraph = styled(Paragraph)`
   margin-bottom: 20px;
 `;
 
-const StyledButton = styled(Button)``;
+const StyledLinks = styled.div`
+  margin-top: auto;
+  display: flex;
+  gap: 16px;
+`;
 
-const AppCard = ({ reverse, title, content, technologiesContent, siteUrl, image }) => (
+const AppCard = ({ reverse, title, content, technologiesContent, siteUrl, gitHubUrl, image }) => (
   <StyledWrapper reverse={reverse}>
     <StyledImageWrapper reverse={reverse}>
       <StyledImage src={image} />
@@ -75,9 +79,14 @@ const AppCard = ({ reverse, title, content, technologiesContent, siteUrl, image 
       </StyledHeading>
       <StyledParagraph>{content}</StyledParagraph>
       <StyledParagraph>{technologiesContent}</StyledParagraph>
-      <a href={siteUrl} target="_blank" rel="noreferrer">
-        <StyledButton secondary>Sprawdź</StyledButton>
-      </a>
+      <StyledLinks>
+        <a href={siteUrl} target="_blank" rel="noreferrer">
+          <Button>Live</Button>
+        </a>
+        <a href={gitHubUrl} target="_blank" rel="noreferrer">
+          <Button secondary>GitHub</Button>
+        </a>
+      </StyledLinks>
     </StyledTextWrapper>
   </StyledWrapper>
 );
@@ -88,6 +97,7 @@ AppCard.propTypes = {
   content: PropTypes.string.isRequired,
   technologiesContent: PropTypes.string.isRequired,
   siteUrl: PropTypes.string.isRequired,
+  gitHubUrl: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
 };
 
