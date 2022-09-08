@@ -6,6 +6,7 @@ import HeadingTemplate from 'templates/HeadingTemplate';
 import ContactIcon from 'components/atoms/ContactIcon';
 import facebookIcon from 'assets/icon/facebookIcon.svg';
 import githubIcon from 'assets/icon/githubIcon.svg';
+import mailIcon from 'assets/icon/mail_icon.svg';
 import Paragraph from 'components/atoms/Paragraph';
 
 const StyledContactWrapper = styled.div`
@@ -17,17 +18,15 @@ const StyledContactWrapper = styled.div`
   }
 `;
 
-const StyledFormAndIconFlexBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px 200px;
-`;
-
-const StyledContactIcon = styled.div`
+const StyledContactIcons = styled.div`
   margin-top: 32px;
-  width: 300px;
   display: flex;
-  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+
+  a:last-child{
+    
+  }
 `;
 
 const StyledParagraph = styled(Paragraph)`
@@ -47,21 +46,20 @@ const ContactForm = () => (
   <PageTemplate>
     <StyledContactWrapper>
       <HeadingTemplate title={headingData.title} description={headingData.description} />
-      <StyledFormAndIconFlexBox>
-        <div>
-          <StyledContactIcon>
+          <StyledContactIcons>
+            <a href="mailto:radoslawkania09@gmail.com" target="_blank" rel="noreferrer">
+              <ContactIcon icon={mailIcon}/>
+            </a>
             <a href="https://www.facebook.com/Raadeek">
               <ContactIcon icon={facebookIcon} target="_blank" rel="noreferrer" />
             </a>
             <a href="https://github.com/Geniecko" target="_blank" rel="noreferrer">
               <ContactIcon icon={githubIcon} />
             </a>
-          </StyledContactIcon>
+          </StyledContactIcons>
           <StyledParagraph>
-            <span>Mój email:</span> radoslawkania09@gmail.com
+            <span>Mail:</span> radoslawkania09@gmail.com
           </StyledParagraph>
-        </div>
-      </StyledFormAndIconFlexBox>
     </StyledContactWrapper>
   </PageTemplate>
 );

@@ -16,7 +16,7 @@ export const websiteProjects = [
     id: 1,
     title: 'Weather App',
     content:
-      'Projekt to prosta apilkacja pogodowa. Jej celem jest wyszukiwanie prognozy pogody po wpisaniu nazwy miasta. Skorzystałem w tym projekci z API pogodowego w wersji darmowej, więc nie miałem dużego pola do popisu. Skorzystałem z aktualnej pogody, jakości powietrza oraz prognozy na najbliższe dni. W tym projekcie użyłem Reduxa w którym przechowuje główny stan pogody, status, alerty oraz błędy. Głównym celem projektu było przećwiczenie technologii React & TypeScript oraz zapoznanie się z narzędziem React Toolkit. W projekcie korzystałem również z gita - etapy przebiegu projektu można zobaczyć na moim GitHubie. Aplikacje stylowałem za pomocą bilblioteki styled-components.',
+      'Projekt to prosta apilkacja pogodowa. Jej celem jest wyszukiwanie prognozy pogody po wpisaniu nazwy miasta. Skorzystałem w tym projekci z API pogodowego w wersji darmowej, więc nie miałem dużego pola do popisu. Skorzystałem z aktualnej pogody, jakości powietrza oraz prognozy na najbliższe dni. W tym projekcie użyłem Reduxa w którym przechowuje główny stan pogody, status, alerty oraz błędy. Głównym celem projektu było przećwiczenie technologii React & TypeScript oraz zapoznanie się z narzędziem Redux Toolkit. W projekcie korzystałem również z gita - etapy przebiegu projektu można zobaczyć na moim GitHubie. Aplikacje stylowałem za pomocą bilblioteki styled-components.',
     technologiesContent:
       'Użyte technologie: React & TypeScript, React-Router v6, React-Redux, Redux toolkit, React-Hooks, Styled-Components, Eslint, Prettier',
     siteUrl: 'https://weather-app-g.netlify.app/',
