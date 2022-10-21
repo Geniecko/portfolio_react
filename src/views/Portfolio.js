@@ -48,7 +48,7 @@ const StyledGitHubWrapper = styled.div`
 const headingData = {
   title: 'Portfolio',
   description:
-    'Poniżej znajduję się kilka projektów stworzonych w toku nauki. Zachęcam do zapoznania się oraz odwiedzenia mojego GitHuba. ',
+    'Poniżej znajduje się kilka projektów stworzonych w toku nauki. Zachęcam do zapoznania się oraz odwiedzenia mojego GitHuba. ',
 };
 
 const Portfolio = () => (
