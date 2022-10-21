@@ -10,6 +10,10 @@ import moviesLibrary from 'assets/image/movies_library.jpg';
 import moviesLibraryMobile from 'assets/image/movies_library_mobile.jpg';
 import weatherApp from 'assets/image/weather_app.jpg';
 import weatherAppMobile from 'assets/image/weather_app_mobile.jpg';
+import bmwIx from 'assets/image/bmw_ix.jpg'
+import bmwIxMobile from 'assets/image/bmw_ix_mobile.jpg'
+import frontendFlashcards from 'assets/image/frontend_fiszki.jpg'
+import frontendFlashcardsMobile from 'assets/image/frontend_fiszki_mobile.jpg'
 
 export const websiteProjects = [
   {
@@ -38,18 +42,30 @@ export const websiteProjects = [
   },
   {
     id: 3,
-    title: 'Portfolio',
+    title: 'Frontend Flashcards',
     content:
-      'Portfolio, które właśnie oglądasz jest to jeden z pierwszych projektów, które stworzyłem w ReactJS. Postanowiłem użyc Reacta ze względu na routing. Za pomocą CSSTransition udało mi się stworzyć animowane przejścia pomiędzy podstronami. Od samego początku tworzenia aplikacji używałem narzędzi takich jak Eslint oraz Prettier, które zkonfigurowałem w plikach .eslintrc oraz .prettierrc. Struktura plików jest zbudowana zgodnie z zasadą Atomic Design Pattern. Strone stylowałem za pomocą bilblioteki styled-components. Portfolio jest w pełni responsywne. Layout stworzony w programie Figma. ',
+      'Projekt Frontend Flashcards to aplikacja edukacyjna oparta na popularnym pomyśle nauki z fiszek. Na głównej stronie znajdują się najnowsze fiszki dodane przez użytkowników oraz dodatkowo cztery losowe karty. Użytkownik może się zalogować na swoje konto, a następnie może stworzyć nową fiszke lub wrócić do podglądu wcześniej stworzonych przez siebie fiszek. Projekt powstał z myślą o stworzeniu prostego dashboardu użytkownika oraz przećwiczenia React Context w praktyce. Wszystkie dane ładowane są z pliku metodą fetch, imitując tym pobranie danych z serwera. Aplikacja niestety nie jest połączona z żadną bazą danych, więc po odświeżeniu przeglądarki wraca do stanu początkowego. Przykładowe dane logowania (login/hasło): user/userpass',
     technologiesContent:
-      'Użyte technologie: React, React-Router, Styled-Components, CSSTransition, Eslint, Prettier, Figma, Photoshop',
-    siteUrl: '/',
-    gitHubUrl: 'https://github.com/Geniecko/portfolio_react',
-    image: portfolioReact,
-    imageMobile: portfolioReactMobile,
+      'Użyte technologie: React & TypeScript, React-Router, React Context, React Hooks, Styled-Components, React Icons, Eslint, Prettier, Figma',
+    siteUrl: 'https://frontend-flashcard.netlify.app/',
+    gitHubUrl: 'https://github.com/Geniecko/frontend_flashcards',
+    image: frontendFlashcards,
+    imageMobile: frontendFlashcardsMobile,
   },
   {
     id: 4,
+    title: 'BMW IX',
+    content:
+      'Strona zakodowana z gotowego projektu graficznego. Ten projekt posiada pełną responsywność oraz był pisany zgodnie z fluid RWD. Do stworzenia slidera użyłem zewnętrznej bliblioteki SplideJS. Zdjęcia na stronie są kompatybilne z ekranami typu hi-rez (retina-friendly). Strona posiada lekkie animacje.',
+    technologiesContent:
+      'Użyte technologie: HTML, CSS(SASS & BEM), JavaScript, SplideJs, AOC, Webpack, Git',
+    siteUrl: 'https://bmw-example-site.netlify.app/',
+    gitHubUrl: 'https://github.com/Geniecko/bmw_ix',
+    image: bmwIx,
+    imageMobile: bmwIxMobile,
+  },
+  {
+    id: 5,
     title: 'Music Festival',
     content:
       'Layout strony stworzyłem w programie Figma, a następnie zakodowałem stronę przy użyciu techonologii wymienionych poniżej. Artyści są wczytywani z pliku JSON metodą FETCH API, a następnie za pomocą JavaScript dodani do strony. Strona posiada RWD. Arkusz stylów jest napisany przy użyciu preprocesora SASS. Zastosowałem tutaj metodę Mobile First',
@@ -61,7 +77,7 @@ export const websiteProjects = [
     imageMobile: musicFestivalMobile,
   },
   {
-    id: 5,
+    id: 6,
     title: 'Thomas Anderson',
     content:
       'Wstępny layout strony stworzyłem w programie Figma oraz grafiki w programie Photoshop. Postanowiłem użyc przy tym projekcie uprzednio skonfigurowanego Webpacka ponieważ chciałem przetestować go w praktyce. W projekcie zdecydowałem się użyc preprocesora SASS w połączeniu z metodologią BEM. Strona posiada wersję mobilną i jest w pełni responsywna (Desktop First).',
@@ -71,6 +87,18 @@ export const websiteProjects = [
     gitHubUrl: 'https://github.com/Geniecko/thomas_anderson',
     image: thomasAnderson,
     imageMobile: thomasAndersonMobile,
+  },
+  {
+    id: 7,
+    title: 'Portfolio',
+    content:
+      'Portfolio, które właśnie oglądasz jest to jeden z pierwszych projektów, które stworzyłem w ReactJS. Postanowiłem użyc Reacta ze względu na routing. Za pomocą CSSTransition udało mi się stworzyć animowane przejścia pomiędzy podstronami. Od samego początku tworzenia aplikacji używałem narzędzi takich jak Eslint oraz Prettier, które zkonfigurowałem w plikach .eslintrc oraz .prettierrc. Struktura plików jest zbudowana zgodnie z zasadą Atomic Design Pattern. Strone stylowałem za pomocą bilblioteki styled-components. Portfolio jest w pełni responsywne. Layout stworzony w programie Figma. ',
+    technologiesContent:
+      'Użyte technologie: React, React-Router, Styled-Components, CSSTransition, Eslint, Prettier, Figma, Photoshop',
+    siteUrl: '/',
+    gitHubUrl: 'https://github.com/Geniecko/portfolio_react',
+    image: portfolioReact,
+    imageMobile: portfolioReactMobile,
   },
 ];
 
